@@ -24,6 +24,9 @@ a
   color: #422424;
 }
 
+tw-sidebar {
+    display: none;
+}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
@@ -32,7 +35,8 @@ a
 
 
 
-</script><tw-passagedata pid="1" name="Index" tags="" position="300,250" size="100,100">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+</script><tw-passagedata pid="1" name="Index" tags="" position="300,250" size="100,100">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
 
 &#39;&#39;Options Strategy Finder by Francis Drake Holdings&#39;&#39;
 
@@ -198,7 +202,9 @@ Only theta positive if price is within the range
 [[Rise-&gt;Final Preference]]
 [[Crush-&gt;Final Preference]]
 (click: &quot;Rise&quot;)[(set: $iv to &quot;spike&quot;)]
-(click: &quot;Crush&quot;)[(set: $iv to &quot;crush&quot;)]</tw-passagedata><tw-passagedata pid="15" name="Final Preference" tags="" position="300,500" size="100,100">&#39;&#39;Stock is expected to move $direction&#39;&#39;
+(click: &quot;Crush&quot;)[(set: $iv to &quot;crush&quot;)]
+
+[[Return|Index]]</tw-passagedata><tw-passagedata pid="15" name="Final Preference" tags="" position="300,500" size="100,100">&#39;&#39;Stock is expected to move $direction&#39;&#39;
 &#39;&#39;IV is expected to $iv&#39;&#39;
 &#39;&#39;Possible Strategies&#39;&#39;
 (if: $direction is &quot;up&quot;)[\
@@ -246,7 +252,9 @@ Only theta positive if price is within the range
 	(if: $iv is &quot;crush&quot;)[\
 		[[Short Calender Spread]]\
 	]\
-]</tw-passagedata><tw-passagedata pid="16" name="Short Calender Spread" tags="" position="920,580" size="100,100">&#39;&#39;Short Calender Spread&#39;&#39;
+]
+
+[[Return|IV Forcast]]</tw-passagedata><tw-passagedata pid="16" name="Short Calender Spread" tags="" position="920,580" size="100,100">&#39;&#39;Short Calender Spread&#39;&#39;
 
 &#39;&#39;Vega:&#39;&#39; Short
 &#39;&#39;Vega effect:&#39;&#39; Moderate
